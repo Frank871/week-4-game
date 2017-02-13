@@ -1,0 +1,87 @@
+body {
+
+	background-image: url("../images/soft_kill.png");
+	
+}
+
+.jumbotron {
+
+     width: 45%;
+     background-image: url("../images/soft_kill.png");
+     position: relative;
+     float:  right;
+     right:  375px;
+}
+
+.text-center1 {
+font-size: 55px;
+color:  darkturquoise;
+text-align: center
+
+}
+
+.text-center2 {
+
+	color: crimson;
+}
+
+#random_num {
+	background-color: darkgray;
+	border: solid;
+	border-color: navy;
+	border-style: inset;
+	border-width: 25px;
+	padding: 25px;
+	width: 20%;
+	position: relative;
+	top: 275px;
+	left: 350px;
+	color: darkviolet;
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+#player_score{
+    position: relative;
+	background-color: darkgray;
+	border: solid;
+	border-color: navy;
+	border-style: inset;
+	border-width: 25px;
+	padding: 25px;
+	width: 20%;
+	float: right;
+	color: darkviolet;
+	text-align: center;
+	padding-bottom: 80px;
+	left: 200px;
+	top:  85px;
+
+}
+
+#total_score {
+
+	position: relative;
+	background-color: darkgray;
+	border: solid;
+	border-color: navy;
+	border-style: inset;
+	border-width: 25px;
+	padding: 25px;
+	width: 20%;
+	float: right;
+	color: darkviolet;
+	text-align: center;
+	padding-bottom: 80px;
+	left: 148px;
+	top:  290px;
+
+
+}
+
+#button-1{
+	float: right;
+	position: relative;
+	left: 500px;
+	top: 350px;
+}
