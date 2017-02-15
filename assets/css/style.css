@@ -14,7 +14,7 @@ body {
 }
 
 .text-center1 {
-font-size: 55px;
+font-size: 65px;
 color:  darkturquoise;
 text-align: center
 
@@ -23,6 +23,7 @@ text-align: center
 .text-center2 {
 
 	color: crimson;
+	font-size: 30px;
 }
 
 #random_num {
@@ -83,5 +84,12 @@ text-align: center
 	float: right;
 	position: relative;
 	left: 500px;
+	top: 350px;
+}
+
+#button-2{
+	float: right;
+	position: relative;
+	left: 665px;
 	top: 350px;
 }

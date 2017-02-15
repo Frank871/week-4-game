@@ -1,18 +1,25 @@
 $(document).ready(function(){
 
 
-var A = 0;
-var B = 0;
-var op = null;
-var result = 0;
+	var A = 1
+	var B = 10
+	
+	
+	$(".crystal" ).click(function() {
+        console.log(A);
+      $(".total").html(A);
+  
+ });
 
-
-$( "#button-1" ).click(function() {
-
-if (A == 0)
-        {
-         A = this.value;
-         console.log("A triggered: "+ A)
-      }
- 
+	$(".crystal2" ).click(function() {
+        console.log(B);
+      $(".total").html(B);
+  
+}
+      
 });
+
+});
+
+
+
