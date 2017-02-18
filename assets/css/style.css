@@ -1,13 +1,13 @@
 body {
 
-	background-image: url("../images/soft_kill.png");
+	background-image: url("https://s-media-cache-ak0.pinimg.com/736x/bd/7a/08/bd7a086aa2f4a3df298dc15b29419606.jpg");
 	
 }
 
 .jumbotron {
 
      width: 45%;
-     background-image: url("../images/soft_kill.png");
+     background-image: url("https://s-media-cache-ak0.pinimg.com/736x/bd/7a/08/bd7a086aa2f4a3df298dc15b29419606.jpg");
      position: relative;
      float:  right;
      right:  375px;
@@ -26,7 +26,7 @@ text-align: center
 	font-size: 30px;
 }
 
-#random_num {
+.random_num {
 	background-color: darkgray;
 	border: solid;
 	border-color: navy;
@@ -42,7 +42,7 @@ text-align: center
 	padding-bottom: 80px;
 }
 
-#player_score{
+.win_loss{
     position: relative;
 	background-color: darkgray;
 	border: solid;
@@ -60,7 +60,7 @@ text-align: center
 
 }
 
-#total_score {
+.thescore {
 
 	position: relative;
 	background-color: darkgray;
@@ -80,16 +80,30 @@ text-align: center
 
 }
 
-#button-1{
+#blue{
 	float: right;
 	position: relative;
 	left: 500px;
 	top: 350px;
 }
 
-#button-2{
+#green{
 	float: right;
 	position: relative;
-	left: 665px;
+	left: 700px;
 	top: 350px;
+}
+
+#pink{
+	float: right;
+	position: relative;
+	left: 690px;
+	top: 350px;
+}
+
+#yellow{
+	float: right;
+	position: relative;
+	left: 710px;
+	top: 268px;
 }
