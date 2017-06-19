@@ -1,109 +1,263 @@
 body {
-
-	background-image: url("https://s-media-cache-ak0.pinimg.com/736x/bd/7a/08/bd7a086aa2f4a3df298dc15b29419606.jpg");
+    
+	background-image: url("../images/gem-background.jpg");
 	
 }
 
-.jumbotron {
 
-     width: 45%;
-     background-image: url("https://s-media-cache-ak0.pinimg.com/736x/bd/7a/08/bd7a086aa2f4a3df298dc15b29419606.jpg");
-     position: relative;
-     float:  right;
-     right:  375px;
-}
 
 .text-center1 {
+font-family: 'Audiowide', cursive;
 font-size: 65px;
-color:  darkturquoise;
-text-align: center
+text-align: center;
+animation: example 10s infinite;
+color: blueviolet;
+}
 
+@keyframes example {
+    from {color: darkviolet;}
+    to {color: white;}
+}
+
+img {
+	opacity: 1.0;
+}
+
+img:hover {
+    opacity: 0.4;
+    
 }
 
 .text-center2 {
+	position: relative;
+	top: 25px;
+	left: 340px;
+    color: white;
+	font-size: 15px;
 
-	color: crimson;
-	font-size: 30px;
 }
 
 .random_num {
-	background-color: darkgray;
+	animation: colorchange 50s infinite;
 	border: solid;
 	border-color: navy;
 	border-style: inset;
-	border-width: 25px;
+	border-width: 10px;
 	padding: 25px;
 	width: 20%;
 	position: relative;
-	top: 275px;
-	left: 350px;
-	color: darkviolet;
+	color: black;
 	text-align: center;
 	padding-bottom: 80px;
+	left: 350px;
+	top: 100px;
 }
 
+@keyframes colorchange
+    {
+      0%   {background: white;}
+      25%  {background: lightskyblue;}
+      50%  {background: lightslategray;}
+      75%  {background: aliceblue;}
+      100% {background: skyblue;}
+    }
+
 .win_loss{
-    position: relative;
-	background-color: darkgray;
+    
+	animation: switch 50s infinite;
 	border: solid;
 	border-color: navy;
 	border-style: inset;
-	border-width: 25px;
+	border-width: 10px;
 	padding: 25px;
 	width: 20%;
-	float: right;
-	color: darkviolet;
+	color: black;
+	font-size: 16px;
 	text-align: center;
 	padding-bottom: 80px;
-	left: 200px;
-	top:  85px;
-
+	position: relative;
+	left: 700px;
+	top: 130px;
 }
+
+@keyframes switch
+    {
+      0%   {background: white;}
+      25%  {background: lightskyblue;}
+      50%  {background: lightslategray;}
+      75%  {background: aliceblue;}
+      100% {background: skyblue;}
+    }
 
 .thescore {
 
-	position: relative;
-	background-color: darkgray;
+    animation: flow 50s infinite;
 	border: solid;
 	border-color: navy;
 	border-style: inset;
-	border-width: 25px;
+	border-width: 10px;
 	padding: 25px;
 	width: 20%;
-	float: right;
-	color: darkviolet;
+	color: black;
 	text-align: center;
 	padding-bottom: 80px;
-	left: 148px;
-	top:  290px;
-
-
+	position: relative;
+	bottom: 230px;
+	left: 700px;
+	
 }
 
+@keyframes flow
+    {
+      0%   {background: white;}
+      25%  {background: lightskyblue;}
+      50%  {background: lightslategray;}
+      75%  {background: aliceblue;}
+      100% {background: skyblue;}
+    }
+
 #blue{
-	float: right;
 	position: relative;
-	left: 500px;
-	top: 350px;
+	bottom: 200px;
+	left: 325px;
 }
 
 #green{
-	float: right;
-	position: relative;
-	left: 700px;
-	top: 350px;
+position: relative;
+bottom: 200px;
+left:  333px;
 }
 
-#pink{
-	float: right;
-	position: relative;
-	left: 690px;
-	top: 350px;
+#red{
+position: relative;
+bottom: 185px;
+left:  334px;
 }
 
-#yellow{
-	float: right;
-	position: relative;
-	left: 710px;
-	top: 268px;
+#white{
+position: relative;
+bottom: 200px;	
+left: 336px;
+
 }
+
+
+
+
+@media screen and (max-width:768px) {
+
+ .text-center2 {
+	position: relative;
+	top: 25px;
+	left: 50px;
+	font-size: 18px;
+  }
+
+  .random_num {
+	position: relative;
+	left: 20px;
+	top: 50px;
+}
+
+.thescore {
+    position: relative;
+    top:  -292px;
+	left: 250px;
+}
+
+.win_loss{
+    
+	position: relative;
+	left: 500px;
+	top: -100px;
+	
+}
+
+#blue{
+	position: relative;
+	bottom: 250px;
+	left: 60px;
+}
+
+#green{
+position: relative;
+bottom: 250px;
+left:  100px;
+}
+
+#red{
+position: relative;
+bottom: 239px;
+left:  140px;
+}
+
+#white{
+position: relative;
+bottom: 250px;	
+left: 200px;
+
+}
+
+}
+
+
+@media screen and (max-width:640px) {
+
+.text-center2 {
+	position: relative;
+	top: 25px;
+	left: 20px;
+	font-size: 16px;
+	
+  }
+
+  .random_num {
+	position: relative;
+	left: 20px;
+	top: 50px;
+}
+
+.thescore {
+    position: relative;
+    top:  -330px;
+	left: 230px;
+}
+
+.win_loss{
+    
+	position: relative;
+	left: 440px;
+	top: -123px;
+	
+}
+
+
+#blue{
+	position: relative;
+	bottom: 250px;
+	left: 60px;
+}
+
+#green{
+position: relative;
+bottom: 250px;
+left:  100px;
+}
+
+#red{
+position: relative;
+bottom: 239px;
+left:  140px;
+}
+
+#white{
+position: relative;
+bottom: 250px;	
+left: 200px;
+
+}
+
+}
+
+/* end tag */
+

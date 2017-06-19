@@ -9,17 +9,21 @@ var crystal = {
     name: "Green",
     value: 0
   },
-  pink:
+  red:
   {
-    name: "Pink",
+    name: "Red",
     value: 0
   },
-  yellow:
+  white:
   {
-    name: "Yellow",
+    name: "White",
     value: 0
   }
 };
+//plays audio for game
+var audio = new Audio("assets/javascript/cosmic.mp3");
+
+
 
 // Scores (Current and Target)
 var currentScore = 0;
@@ -32,6 +36,9 @@ var lossCount = 0;
 
 // FUNCTIONS
 // =================================================================
+
+//
+window.onload = function(){ audio.play();}
 
 // Helper Function for getting random numbers
 var getRandom = function(min, max) {
@@ -49,9 +56,9 @@ var startGame = function() {
 
   // Set different values for each of the crystals (between 1 and 12)
   crystal.blue.value = getRandom(1, 12);
-  crystal.pink.value = getRandom(1, 12);
+  crystal.red.value = getRandom(1, 12);
   crystal.green.value = getRandom(1, 12);
-  crystal.yellow.value = getRandom(1, 12);
+  crystal.white.value = getRandom(1, 12);
 
   // Change the HTML to reflect all of these changes
   $("#your-score").html(currentScore);
@@ -61,9 +68,10 @@ var startGame = function() {
   // Testing Console
   console.log("-----------------------------------");
   console.log("Target Score: " + targetScore);
-  console.log("Blue: " + crystal.blue.value + " | Green: " + crystal.green.value + " | Pink: " + crystal.pink.value +
-    " | Yellow: " + crystal.yellow.value);
+  console.log("Blue: " + crystal.blue.value + " | Green: " + crystal.green.value + " | Red: " + crystal.red.value +
+    " | White: " + crystal.white.value);
   console.log("-----------------------------------");
+
 };
 
 // Check if User Won or Lost and Reset the Game
@@ -116,24 +124,21 @@ var addValues = function(clickedCrystal) {
   console.log("Your Score: " + currentScore);
 };
 
+
+
+
 // MAIN PROCESS
 // =================================================================
 
 // Starts the Game the First Time.
 startGame();
 
-$("#blue").click(function() {
+$('#blue,#red,#green,#white').click(function () {
   addValues(crystal.blue);
-});
-
-$("#pink").click(function() {
-  addValues(crystal.pink);
-});
-
-$("#green").click(function() {
+  addValues(crystal.red);
   addValues(crystal.green);
+  addValues(crystal.white);
+
 });
 
-$("#yellow").click(function() {
-  addValues(crystal.yellow);
-});
+
